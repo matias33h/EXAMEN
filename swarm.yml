@@ -16,7 +16,7 @@ services:
     ports:
       - "80:80" # Mapea el puerto 80 del contenedor al puerto 80 del host
     volumes:
-      - app:/app # Reemplaza /ruta/local/a/tu/aplicacion con la ruta local de tu aplicación
+      - ./app:/app # Reemplaza /ruta/local/a/tu/aplicacion con la ruta local de tu aplicación
     deploy:
       replicas: 4 # Especifica el número de réplicas (contenedores) que deseas
       restart_policy:
