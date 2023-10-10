@@ -30,3 +30,15 @@ docker stack deploy -c swarm.yml mi_stack
 docker stack services mi_stack
 
 
+
+8# Para envair el asunto y el correo debo mandar estos parametros se recomienda hacerlo en postman para realizar la peticion
+
+{
+  "remitente": "ejemplo@gmail.com",
+  "destinatario": "ejemplo@gmail.com",
+  "asunto": "Asunto del correo 4sss",
+  "mensaje": "Contenido del mensaje 2s",
+  "usuario": "programpruebas0@gmail.com",
+  "contraseña": "vxivurzznjeuwzmj"
+}
+

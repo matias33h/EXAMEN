@@ -29,7 +29,7 @@ sendEmail.recouverPassword = (userEmail, codeEmail) => {
 
   // Configura los datos del correo electrónico
   const mailOptions = {
-    from: `Empleos Formosa <${gmailAPP}>`,
+    from: `Examen de docker <${gmailAPP}>`,
     to: userEmail,
     subject: 'Cambiar la contraseña de la cuenta',
     html: `
@@ -39,7 +39,6 @@ sendEmail.recouverPassword = (userEmail, codeEmail) => {
           <legend class="legendEmpFSA">Cambiar Contraseña</legend>
           <a href="${url}"><input type="button" id="buttonSubmit" value="Cambiar Contraseña"></a>
         </fieldset>
-        <p>Cualquier consulta o falla encontrada en el uso del servicio Empleos Formosa, por favor informarlo vía email al <a href="mailto:EmpleosFormosa@gmail.com.ar">EmpleosFormosa@gmail.com.ar</a></p>
     </div>
     <style>
       .divEmpFSA {
@@ -105,7 +104,7 @@ sendEmail.confirmEmail = (userEmail, codeEmail) => {
 
   // Configura los datos del correo electrónico
   const mailOptions = {
-    from: `Empleos Formosa <${gmailAPP}>`,
+    from: ` <${gmailAPP}>`,
     to: userEmail,
     subject: 'Confirmacion de correo electronico',
     html: `
@@ -115,7 +114,6 @@ sendEmail.confirmEmail = (userEmail, codeEmail) => {
           <legend class="legendEmpFSA">Confirmacion de Correo</legend>
           <a href="${url}"><input type="button" id="buttonSubmit" value="Confirmar Correo Electronico"></a>
         </fieldset>
-        <p>Cualquier consulta o falla encontrada en el uso del servicio Empleos Formosa, por favor informarlo vía email al <a href="mailto:EmpleosFormosa@gmail.com.ar">EmpleosFormosa@gmail.com.ar</a></p>
     </div>
     <style>
       .divEmpFSA {
